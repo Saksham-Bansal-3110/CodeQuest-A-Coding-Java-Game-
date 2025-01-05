@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    background-image: url("/img/stats-img.jpg");
+
+}
+
+.stats-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:rgba(133, 133, 133, 0.567);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(125, 122, 122, 0.586);
+    
+}
+
+h1 {
+    text-align: center;
+    color:rgb(254, 253, 251);
+    font-style: Bold;
+    font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+	margin-bottom: 30px;
+    
+
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.solved, .activity {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 7px 3px rgba(0, 0, 0, 0.505);
+}
+
+p {
+    margin: 5px 0;
+}
+
+.achievements {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 7px 3px rgba(0, 0, 0, 0.534);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eaf7e9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #4CAF50;
+}

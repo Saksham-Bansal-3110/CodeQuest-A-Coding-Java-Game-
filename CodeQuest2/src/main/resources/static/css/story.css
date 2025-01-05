@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black; /* Replace with your desired background image */
+    font-family: 'Press Start 2P', cursive; /* Retro gaming font */
+  }
+  
+  .scroll-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    perspective: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  #scroll-text {
+    position: absolute;
+    bottom: -100%; /* Start off-screen */
+    width: 60%;
+    color: yellow;
+    text-align: justify;
+    transform: rotateX(20deg); /* Tilt the text */
+    transform-origin: center bottom;
+    font-size: 1.5em;
+    line-height: 2;
+    animation: scroll-animation 5s linear forwards;
+  }
+  
+  #start-game {
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+    width: 100%;
+    color: yellow;
+    font-size: 2em;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .hidden {
+    display:none;
+  }
+  
+  .visible {
+    display: block;
+    opacity: 1;
+  }
+  
+  @keyframes scroll-animation {
+    from {
+      bottom: -100%;
+    }
+    to {
+      bottom: 100%;
+    }
+  }
+  
